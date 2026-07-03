@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veloria Grand Hotel | Luxury Stay & Experience</title>
+  <meta name="description" content="Veloria Grand Hotel offers luxury rooms, world-class amenities, fine dining, and an unforgettable experience in the heart of the city. Book your stay today." />
+  <meta name="keywords" content="luxury hotel, Veloria Grand, hotel booking, rooms, suites, fine dining, spa, city hotel" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/home.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Veloria<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="btn btn-gold nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- MOBILE NAV -->
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="rooms.html">Rooms &amp; Packages</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Book Now</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hero banner">
+    <div class="hero-bg" role="img" aria-label="Luxury hotel exterior at dusk"></div>
+    <div class="container">
+      <div class="hero-content">
+        <span class="section-label">Welcome to Veloria Grand</span>
+        <h1>Where Luxury<br />Meets <em>Serenity</em></h1>
+        <p>Experience an unparalleled blend of elegance, comfort, and world-class hospitality in the heart of the city.</p>
+        <div class="hero-btns">
+          <a href="rooms.html" class="btn btn-gold">Explore Rooms</a>
+          <a href="about.html" class="btn btn-outline">Our Story</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK BOOKING BAR -->
+  <div class="booking-bar" aria-label="Quick booking">
+    <div class="container">
+      <div class="booking-bar-inner">
+        <div class="booking-field">
+          <label for="checkIn">Check-In</label>
+          <input type="date" id="checkIn" name="checkin" aria-label="Check-in date" />
+        </div>
+        <div class="booking-field">
+          <label for="checkOut">Check-Out</label>
+          <input type="date" id="checkOut" name="checkout" aria-label="Check-out date" />
+        </div>
+        <div class="booking-field">
+          <label for="guests">Guests</label>
+          <select id="guests" name="guests" aria-label="Number of guests">
+            <option value="1">1 Guest</option>
+            <option value="2" selected>2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+          </select>
+        </div>
+        <button class="booking-bar-btn" id="bookingBtn" aria-label="Check availability">Check Availability</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT STRIP -->
+  <section class="section" aria-labelledby="home-about-heading">
+    <div class="container">
+      <div class="about-strip">
+        <div class="about-strip-image reveal">
+          <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?w=700&q=80" alt="Veloria Grand Hotel lobby interior with grand chandelier" width="700" height="420" loading="lazy" />
+          <div class="about-strip-image-accent" aria-hidden="true"></div>
+        </div>
+        <div class="reveal" data-delay="120">
+          <span class="section-label">Our Heritage</span>
+          <h2 id="home-about-heading" class="section-title">A Legacy of <br/>Refined Hospitality</h2>
+          <div class="divider-gold" aria-hidden="true"></div>
+          <p>Founded in 1998, Veloria Grand has been synonymous with understated luxury and personalised service. Every detail — from the hand-picked linen to the curated art on our walls — reflects our commitment to creating moments that guests carry with them long after check-out.</p>
+          <p>Our 147 rooms and suites are designed as private sanctuaries, each one a considered balance of contemporary comfort and timeless aesthetic.</p>
+          <a href="about.html" class="btn btn-dark">Learn More</a>
+          <div class="stats-row">
+            <div class="stat-item">
+              <div class="stat-number">147<span>+</span></div>
+              <div class="stat-label">Luxury Rooms</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">26<span>+</span></div>
+              <div class="stat-label">Years of Service</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">4.9<span>★</span></div>
+              <div class="stat-label">Guest Rating</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED ROOMS -->
+  <section class="section section-alt" aria-labelledby="rooms-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Accommodations</span>
+        <h2 id="rooms-heading" class="section-title">Our Signature Rooms</h2>
+        <div class="divider-gold" aria-hidden="true"></div>
+        <p class="section-intro">From intimate deluxe rooms to sprawling penthouse suites, each space is a retreat crafted for discerning travellers.</p>
+      </div>
+      <div class="rooms-grid">
+        <article class="room-card reveal" data-delay="0">
+          <img class="room-card-img" src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80" alt="Deluxe Room with king-size bed and city view at Veloria Grand" loading="lazy" width="600" height="220" />
+          <div class="room-card-body">
+            <div class="room-tag">Most Popular</div>
+            <h3>Deluxe Room</h3>
+            <p>Spacious 38 sqm room with king-size bed, marble en-suite, and panoramic city views.</p>
+            <div class="room-meta">
+              <div class="room-price">₹8,500 <span>/ night</span></div>
+              <a href="contact.html" class="btn btn-gold">Book</a>
+            </div>
+          </div>
+        </article>
+        <article class="room-card reveal" data-delay="100">
+          <img class="room-card-img" src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=600&q=80" alt="Junior Suite living area with plush sofa and floor-to-ceiling windows" loading="lazy" width="600" height="220" />
+          <div class="room-card-body">
+            <div class="room-tag">Best Value</div>
+            <h3>Junior Suite</h3>
+            <p>A generous 55 sqm suite with separate living area, walk-in wardrobe, and whirlpool bath.</p>
+            <div class="room-meta">
+              <div class="room-price">₹13,000 <span>/ night</span></div>
+              <a href="contact.html" class="btn btn-gold">Book</a>
+            </div>
+          </div>
+        </article>
+        <article class="room-card reveal" data-delay="200">
+          <img class="room-card-img" src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80" alt="Presidential Suite bedroom with private terrace and butler service" loading="lazy" width="600" height="220" />
+          <div class="room-card-body">
+            <div class="room-tag">Premium</div>
+            <h3>Presidential Suite</h3>
+            <p>Our crown jewel — 120 sqm of curated luxury with a private terrace and dedicated butler.</p>
+            <div class="room-meta">
+              <div class="room-price">₹32,000 <span>/ night</span></div>
+              <a href="contact.html" class="btn btn-gold">Book</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div style="text-align:center; margin-top:40px;">
+        <a href="rooms.html" class="btn btn-dark">View All Rooms & Packages</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- AMENITIES -->
+  <section class="section section-dark" aria-labelledby="amenities-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">World-Class Facilities</span>
+        <h2 id="amenities-heading" class="section-title" style="color:var(--warm-white);">Everything You Need,<br/>Nothing You Don't</h2>
+        <div class="divider-gold" aria-hidden="true"></div>
+      </div>
+      <div class="amenities-grid">
+        <div class="amenity-card reveal" data-delay="0">
+          <div class="amenity-icon" aria-hidden="true">🏊</div>
+          <h3>Infinity Pool</h3>
+          <p>A rooftop pool with skyline views, open year-round.</p>
+        </div>
+        <div class="amenity-card reveal" data-delay="80">
+          <div class="amenity-icon" aria-hidden="true">🧖</div>
+          <h3>Veloria Spa</h3>
+          <p>Signature treatments and wellness rituals for body and mind.</p>
+        </div>
+        <div class="amenity-card reveal" data-delay="160">
+          <div class="amenity-icon" aria-hidden="true">🍽️</div>
+          <h3>Fine Dining</h3>
+          <p>Two award-winning restaurants and a rooftop bar.</p>
+        </div>
+        <div class="amenity-card reveal" data-delay="240">
+          <div class="amenity-icon" aria-hidden="true">💼</div>
+          <h3>Business Centre</h3>
+          <p>State-of-the-art meeting rooms with high-speed connectivity.</p>
+        </div>
+        <div class="amenity-card reveal" data-delay="0">
+          <div class="amenity-icon" aria-hidden="true">🏋️</div>
+          <h3>Fitness Studio</h3>
+          <p>24/7 fully equipped gym with personal training available.</p>
+        </div>
+        <div class="amenity-card reveal" data-delay="80">
+          <div class="amenity-icon" aria-hidden="true">🚗</div>
+          <h3>Valet Parking</h3>
+          <p>Complimentary valet parking for all registered guests.</p>
+        </div>
+        <div class="amenity-card reveal" data-delay="160">
+          <div class="amenity-icon" aria-hidden="true">🛎️</div>
+          <h3>24/7 Concierge</h3>
+          <p>Your personal concierge available around the clock.</p>
+        </div>
+        <div class="amenity-card reveal" data-delay="240">
+          <div class="amenity-icon" aria-hidden="true">📶</div>
+          <h3>High-Speed WiFi</h3>
+          <p>Complimentary ultra-fast WiFi throughout the property.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section" aria-labelledby="testimonials-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <span class="section-label">Guest Reviews</span>
+        <h2 id="testimonials-heading" class="section-title">What Our Guests Say</h2>
+        <div class="divider-gold" style="margin:16px auto 0;" aria-hidden="true"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal" data-delay="0">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"Absolutely stunning. The attention to detail was remarkable — from the arrangement of flowers in our room to the temperature of the pool. We will return."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">P</div>
+            <div>
+              <div class="author-name">Priya Mehta</div>
+              <div class="author-loc">Mumbai, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" data-delay="100">
+          <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p>"The spa is truly exceptional. I've stayed in luxury hotels across Asia and Veloria Grand remains one of the finest for service and genuine warmth."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">R</div>
+            <div>
+              <div class="author-name">Rahul Sharma</div>
+              <div class="author-loc">Delhi, India</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal" data-delay="200">
+          <div class="stars" aria-label="4 out of 5 stars">★★★★★</div>
+          <p>"Our anniversary stay in the Junior Suite was a dream. Breakfast was extraordinary and the room was impeccably maintained. Highly recommend."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar" aria-hidden="true">A</div>
+            <div>
+              <div class="author-name">Ananya &amp; Vikram</div>
+              <div class="author-loc">Pune, India</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+  <section class="cta-banner" aria-label="Call to action">
+    <div class="container">
+      <span class="section-label" style="justify-content:center; display:block;">Limited Offers</span>
+      <h2>Ready for an Unforgettable Stay?</h2>
+      <p>Book directly with us and enjoy our best available rate — guaranteed.</p>
+      <div class="cta-btns">
+        <a href="contact.html" class="btn btn-gold">Book Your Room</a>
+        <a href="rooms.html" class="btn btn-outline">Explore Packages</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Veloria<span>.</span></a>
+          <p>A sanctuary of refined luxury in the heart of the city. Dedicated to creating unforgettable experiences since 1998.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact &amp; Booking</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="rooms.html">Room Packages</a></li>
+            <li><a href="about.html#spa">Veloria Spa</a></li>
+            <li><a href="about.html#dining">Fine Dining</a></li>
+            <li><a href="contact.html">Event Booking</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>12, Grand Palace Road<br />Bandra West, Mumbai<br />Maharashtra 400050</p>
+          <p style="margin-top:10px;">📞 +91 22 6789 0000<br />✉️ hello@veloiagrand.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Veloria Grand Hotel. All rights reserved.</p>
+        <p>Made for <a href="#">MANTRA 2026</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

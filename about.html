@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | Veloria Grand Hotel</title>
+  <meta name="description" content="Learn about Veloria Grand Hotel's rich heritage, our founding story, the values that guide us, and the dedicated team behind your luxury experience." />
+  <meta name="keywords" content="Veloria Grand Hotel about, hotel history, luxury hospitality, hotel team, our values" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <style>
+    /* FAQ on about page */
+    .faq-list { margin-top: 40px; display: flex; flex-direction: column; gap: 12px; max-width: 740px; }
+    .faq-item { border: 1.5px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+    .faq-question {
+      width: 100%; text-align: left; padding: 18px 22px;
+      background: var(--warm-white); border: none; cursor: pointer;
+      font-family: var(--font-body); font-size: 0.97rem; font-weight: 600;
+      color: var(--dark); display: flex; justify-content: space-between; align-items: center;
+      transition: background var(--transition);
+    }
+    .faq-question:hover { background: var(--cream); }
+    .faq-icon { font-size: 1.2rem; transition: transform 0.3s; color: var(--gold); }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.3s; background: var(--cream); }
+    .faq-item.open .faq-answer { max-height: 300px; }
+    .faq-answer p { padding: 18px 22px; font-size: 0.93rem; color: var(--text-muted); margin: 0; }
+
+    /* Awards */
+    .awards-row { display: flex; gap: 28px; flex-wrap: wrap; margin-top: 48px; }
+    .award-badge {
+      flex: 1; min-width: 180px;
+      background: var(--warm-white);
+      padding: 28px 20px;
+      border-radius: var(--radius);
+      text-align: center;
+      box-shadow: var(--shadow);
+    }
+    .award-badge .a-icon { font-size: 2rem; margin-bottom: 10px; }
+    .award-badge h4 { font-size: 0.95rem; margin-bottom: 4px; }
+    .award-badge p { font-size: 0.8rem; color: var(--text-muted); margin: 0; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar scrolled" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Veloria<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="btn btn-gold nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="rooms.html">Rooms &amp; Packages</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Book Now</a>
+  </nav>
+
+  <!-- PAGE HERO -->
+  <header class="page-hero" style="padding-top:72px;">
+    <div class="page-hero-content">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; About Us</div>
+      <h1>Our Story</h1>
+      <p>Heritage, warmth, and a relentless pursuit of excellence</p>
+    </div>
+  </header>
+
+  <!-- OUR STORY -->
+  <section class="section" aria-labelledby="story-heading">
+    <div class="container">
+      <div class="about-story">
+        <div class="reveal">
+          <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?w=700&q=80" alt="Grand entrance of Veloria Hotel with chandelier and marble floors" loading="lazy" width="700" height="440" />
+        </div>
+        <div class="reveal" data-delay="120">
+          <span class="section-label">Est. 1998</span>
+          <h2 id="story-heading" class="section-title">Born from a Passion<br/>for Hospitality</h2>
+          <div class="divider-gold" aria-hidden="true"></div>
+          <p>Veloria Grand was founded by Mr. Arvind Malhotra with a singular vision: to create a hotel that felt less like a stop and more like a destination in itself. Opening its doors in 1998 with just 40 rooms, the hotel has grown into a 147-room landmark that retains the personal touch of a boutique property while offering the facilities of a world-class resort.</p>
+          <p>Every renovation, every hire, every menu change is guided by a simple principle: <em>would a discerning guest notice the difference?</em> If the answer is yes, we do it. If not, we go back to the drawing board.</p>
+          <p>Today, Veloria Grand is recognised by Condé Nast Traveller, Forbes Travel Guide, and TripAdvisor as one of India's finest independent luxury hotels.</p>
+          <a href="rooms.html" class="btn btn-gold">Explore Accommodations</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR VALUES -->
+  <section class="section section-alt" aria-labelledby="values-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <span class="section-label">What We Stand For</span>
+        <h2 id="values-heading" class="section-title">Our Core Values</h2>
+        <div class="divider-gold" style="margin:16px auto;" aria-hidden="true"></div>
+        <p class="section-intro" style="margin:0 auto;">These are not words on a wall. They are the decisions we make every day.</p>
+      </div>
+      <div class="about-values" style="margin-top:48px; grid-template-columns: repeat(2,1fr);">
+        <div class="value-card reveal" data-delay="0">
+          <div class="v-icon" aria-hidden="true">🌟</div>
+          <h3>Excellence Without Compromise</h3>
+          <p>We hold ourselves to the highest standard in every detail — from thread count to tile grout. Mediocrity is not an option at Veloria Grand.</p>
+        </div>
+        <div class="value-card reveal" data-delay="80">
+          <div class="v-icon" aria-hidden="true">🤝</div>
+          <h3>Genuine Warmth</h3>
+          <p>Luxury should never feel cold. Our team is trained to be present, attentive, and human — because that's what guests remember most.</p>
+        </div>
+        <div class="value-card reveal" data-delay="160">
+          <div class="v-icon" aria-hidden="true">🌿</div>
+          <h3>Responsible Luxury</h3>
+          <p>We source locally, reduce waste, and invest in our community. Sustainability is woven into our operations, not bolted on as an afterthought.</p>
+        </div>
+        <div class="value-card reveal" data-delay="240">
+          <div class="v-icon" aria-hidden="true">✨</div>
+          <h3>Personalised Experience</h3>
+          <p>Every guest is different. We listen, we remember, and we anticipate — so your stay feels designed specifically for you.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="section" aria-labelledby="team-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">The People Behind Veloria</span>
+        <h2 id="team-heading" class="section-title">Meet Our Leadership</h2>
+        <div class="divider-gold" aria-hidden="true"></div>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal" data-delay="0">
+          <div class="team-avatar" aria-label="Arvind Malhotra avatar">A</div>
+          <h3>Arvind Malhotra</h3>
+          <p>Founder &amp; Chairman</p>
+        </div>
+        <div class="team-card reveal" data-delay="80">
+          <div class="team-avatar" aria-label="Sunita Bose avatar" style="background:linear-gradient(135deg,#7B6FA0,#2C2C2C)">S</div>
+          <h3>Sunita Bose</h3>
+          <p>General Manager</p>
+        </div>
+        <div class="team-card reveal" data-delay="160">
+          <div class="team-avatar" aria-label="Chef Rajan Nair avatar" style="background:linear-gradient(135deg,#3D7A5C,#2C2C2C)">R</div>
+          <h3>Chef Rajan Nair</h3>
+          <p>Executive Chef</p>
+        </div>
+        <div class="team-card reveal" data-delay="240">
+          <div class="team-avatar" aria-label="Meera Singh avatar" style="background:linear-gradient(135deg,#C94F4F,#2C2C2C)">M</div>
+          <h3>Meera Singh</h3>
+          <p>Head of Guest Experience</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="section section-alt" aria-labelledby="awards-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Recognition</span>
+        <h2 id="awards-heading" class="section-title">Awards &amp; Accolades</h2>
+        <div class="divider-gold" aria-hidden="true"></div>
+      </div>
+      <div class="awards-row">
+        <div class="award-badge reveal"><div class="a-icon">🏆</div><h4>Forbes 5-Star</h4><p>Travel Guide 2024 &amp; 2025</p></div>
+        <div class="award-badge reveal" data-delay="80"><div class="a-icon">🌍</div><h4>Condé Nast Top 20</h4><p>Best Hotels in India 2025</p></div>
+        <div class="award-badge reveal" data-delay="160"><div class="a-icon">🍽️</div><h4>Zagat Rated</h4><p>Best Hotel Restaurant 2024</p></div>
+        <div class="award-badge reveal" data-delay="240"><div class="a-icon">💚</div><h4>Green Leaf Certified</h4><p>Sustainable Tourism 2025</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Common Questions</span>
+        <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+        <div class="divider-gold" aria-hidden="true"></div>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">What are the check-in and check-out times? <span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer"><p>Standard check-in is at 2:00 PM and check-out is at 12:00 noon. Early check-in and late check-out can be arranged based on availability, and are complimentary for suite guests.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is breakfast included in the room rate? <span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer"><p>Complimentary buffet breakfast at The Veloria Dining Room is included in all Junior Suite and Presidential Suite bookings. Breakfast can be added to Deluxe Room rates for ₹950 per person per day.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Do you allow pets? <span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer"><p>We welcome well-behaved pets in our Deluxe Rooms and selected suites. A refundable pet deposit of ₹2,000 is required. Please inform us at the time of booking.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">Is there parking available? <span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer"><p>Yes, complimentary valet parking is available for all hotel guests. Our secure basement parking can accommodate up to 90 vehicles.</p></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false">How far is the hotel from the airport? <span class="faq-icon" aria-hidden="true">+</span></button>
+          <div class="faq-answer"><p>Veloria Grand is approximately 28 km from Chhatrapati Shivaji Maharaj International Airport (roughly 45–60 minutes by road). We offer airport transfer services; please contact our concierge to arrange.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Veloria<span>.</span></a>
+          <p>A sanctuary of refined luxury in the heart of the city. Dedicated to creating unforgettable experiences since 1998.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact &amp; Booking</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="rooms.html">Room Packages</a></li>
+            <li><a href="#spa">Veloria Spa</a></li>
+            <li><a href="#dining">Fine Dining</a></li>
+            <li><a href="contact.html">Event Booking</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>12, Grand Palace Road<br />Bandra West, Mumbai<br />Maharashtra 400050</p>
+          <p style="margin-top:10px;">📞 +91 22 6789 0000<br />✉️ hello@veloriagrand.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Veloria Grand Hotel. All rights reserved.</p>
+        <p>Made for <a href="#">MANTRA 2026</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

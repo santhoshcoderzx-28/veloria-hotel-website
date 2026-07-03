@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rooms & Packages | Veloria Grand Hotel</title>
+  <meta name="description" content="Explore Veloria Grand Hotel's luxury rooms, suites, and packages. From Deluxe Rooms to the Presidential Suite — find the perfect stay for any occasion." />
+  <meta name="keywords" content="hotel rooms, luxury suites, hotel packages, Veloria Grand rooms, deluxe room, presidential suite, honeymoon package" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/pages.css" />
+  <style>
+    /* Package Cards */
+    .packages-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 28px; margin-top: 48px; }
+    .package-card {
+      background: var(--warm-white);
+      border-radius: var(--radius);
+      padding: 36px 28px;
+      box-shadow: var(--shadow);
+      position: relative;
+      border-top: 3px solid transparent;
+      transition: border-color var(--transition), transform var(--transition);
+    }
+    .package-card:hover { border-top-color: var(--gold); transform: translateY(-4px); }
+    .package-card.featured { border-top-color: var(--gold); }
+    .pkg-badge {
+      position: absolute;
+      top: -12px; right: 20px;
+      background: var(--gold);
+      color: var(--warm-white);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+    }
+    .pkg-icon { font-size: 2rem; margin-bottom: 14px; }
+    .package-card h3 { margin-bottom: 8px; }
+    .package-card p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px; }
+    .pkg-includes { list-style: none; margin-bottom: 28px; }
+    .pkg-includes li { font-size: 0.88rem; padding: 6px 0; border-bottom: 1px solid var(--border); display: flex; gap: 8px; }
+    .pkg-includes li::before { content: "✓"; color: var(--gold); font-weight: 700; }
+    .pkg-price { font-family: var(--font-display); font-size: 1.8rem; color: var(--dark); margin-bottom: 20px; }
+    .pkg-price span { font-family: var(--font-body); font-size: 0.85rem; color: var(--text-muted); }
+
+    @media (max-width: 900px) { .packages-grid { grid-template-columns: 1fr; max-width: 480px; } }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar scrolled" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">Veloria<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="rooms.html">Rooms</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html" class="btn btn-gold nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <nav class="mobile-nav" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="rooms.html">Rooms &amp; Packages</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Book Now</a>
+  </nav>
+
+  <header class="page-hero" style="padding-top:72px;">
+    <div class="page-hero-content">
+      <div class="breadcrumb"><a href="index.html">Home</a> &rsaquo; Rooms &amp; Packages</div>
+      <h1>Rooms &amp; Suites</h1>
+      <p>Your sanctuary awaits — choose the room that speaks to you</p>
+    </div>
+  </header>
+
+  <!-- ROOMS LIST -->
+  <section class="section" aria-labelledby="rooms-list-heading">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Accommodations</span>
+        <h2 id="rooms-list-heading" class="section-title">Our Room Categories</h2>
+        <div class="divider-gold" aria-hidden="true"></div>
+        <p class="section-intro">Each room at Veloria Grand is a thoughtfully composed retreat. All rooms include complimentary high-speed WiFi, in-room safe, and 24-hour room service.</p>
+      </div>
+
+      <div class="rooms-list">
+
+        <article class="room-item reveal">
+          <img class="room-item-img" src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=800&q=80" alt="Deluxe Room with king-size bed, warm lighting, and city view" loading="lazy" width="800" height="380" />
+          <div class="room-item-body">
+            <div class="room-tag">Standard Room</div>
+            <h2>Deluxe Room</h2>
+            <p>Our 38 sqm Deluxe Rooms are the foundation of the Veloria experience. Designed with warm oak finishes and hand-stitched headboards, they offer the comfort of home with the refinement of a luxury hotel.</p>
+            <div class="room-features">
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🛏️</span> King-Size Bed</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🏙️</span> City View</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🛁</span> Rain Shower</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">📺</span> 55" Smart TV</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🍵</span> Mini-Bar</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">📶</span> Free WiFi</span>
+            </div>
+            <div class="room-price-big">₹8,500 <span>per night</span></div>
+            <a href="contact.html" class="btn btn-gold">Book This Room</a>
+          </div>
+        </article>
+
+        <article class="room-item reveal">
+          <img class="room-item-img" src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?w=800&q=80" alt="Junior Suite living area with separate lounge, sofa, and panoramic windows" loading="lazy" width="800" height="380" />
+          <div class="room-item-body">
+            <div class="room-tag">Popular Choice</div>
+            <h2>Junior Suite</h2>
+            <p>The 55 sqm Junior Suite adds a separate living area to your experience — ideal for business guests who need a work space, or couples seeking the extra room to breathe. The whirlpool bath is a signature touch.</p>
+            <div class="room-features">
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🛏️</span> Super King Bed</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🛋️</span> Separate Lounge</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🛁</span> Whirlpool Bath</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🚿</span> Walk-in Wardrobe</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">☕</span> Nespresso Machine</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🍳</span> Breakfast Included</span>
+            </div>
+            <div class="room-price-big">₹13,000 <span>per night</span></div>
+            <a href="contact.html" class="btn btn-gold">Book This Room</a>
+          </div>
+        </article>
+
+        <article class="room-item reveal">
+          <img class="room-item-img" src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800&q=80" alt="Veloria Suite private terrace overlooking city skyline at sunset" loading="lazy" width="800" height="380" />
+          <div class="room-item-body">
+            <div class="room-tag">Premium</div>
+            <h2>The Veloria Suite</h2>
+            <p>An 85 sqm suite with a private wrap-around terrace — the perfect setting for a sunrise breakfast above the city. Two-room layout with a fully stocked bar and a dedicated in-suite dining area.</p>
+            <div class="room-features">
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🌅</span> Private Terrace</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🛏️</span> 2 Bedrooms</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🍸</span> Private Bar</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🛁</span> Dual Jacuzzi</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🧖</span> Spa Credits</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🍳</span> All Meals Included</span>
+            </div>
+            <div class="room-price-big">₹22,000 <span>per night</span></div>
+            <a href="contact.html" class="btn btn-gold">Book This Room</a>
+          </div>
+        </article>
+
+        <article class="room-item reveal">
+          <img class="room-item-img" src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=800&q=80" alt="Presidential Suite master bedroom with handcrafted furniture and panoramic city view" loading="lazy" width="800" height="380" />
+          <div class="room-item-body">
+            <div class="room-tag">Crown Jewel</div>
+            <h2>Presidential Suite</h2>
+            <p>At 120 sqm, the Presidential Suite is Veloria Grand at its most uncompromising. A dedicated butler, private gym, screening room, and a 270-degree city panorama make this our most sought-after address.</p>
+            <div class="room-features">
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🛎️</span> Dedicated Butler</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🏋️</span> Private Gym</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🎬</span> Screening Room</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🌆</span> 270° Panorama</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">✈️</span> Airport Transfer</span>
+              <span class="room-feature"><span class="room-feature-icon" aria-hidden="true">🌸</span> Daily Floral Service</span>
+            </div>
+            <div class="room-price-big">₹32,000 <span>per night</span></div>
+            <a href="contact.html" class="btn btn-gold">Book This Room</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <section class="section section-alt" aria-labelledby="packages-heading">
+    <div class="container">
+      <div class="reveal" style="text-align:center;">
+        <span class="section-label">Curated Experiences</span>
+        <h2 id="packages-heading" class="section-title">Our Special Packages</h2>
+        <div class="divider-gold" style="margin:16px auto;" aria-hidden="true"></div>
+        <p class="section-intro" style="margin:0 auto;">We've bundled our finest offerings into packages designed around the moments that matter most.</p>
+      </div>
+      <div class="packages-grid">
+        <div class="package-card reveal" data-delay="0">
+          <div class="pkg-icon" aria-hidden="true">💑</div>
+          <h3>Honeymoon Escape</h3>
+          <p>A romantic retreat crafted for two, with intimate touches throughout your stay.</p>
+          <ul class="pkg-includes" aria-label="Package inclusions">
+            <li>Junior Suite (3 nights)</li>
+            <li>Champagne &amp; rose petal turndown</li>
+            <li>Couple's spa treatment</li>
+            <li>Candlelight dinner for two</li>
+            <li>Late checkout (2 PM)</li>
+          </ul>
+          <div class="pkg-price">₹45,000 <span>/ 3 nights</span></div>
+          <a href="contact.html" class="btn btn-gold" style="width:100%; text-align:center;">Book Package</a>
+        </div>
+        <div class="package-card featured reveal" data-delay="100">
+          <div class="pkg-badge" aria-label="Most popular">Most Popular</div>
+          <div class="pkg-icon" aria-hidden="true">🌟</div>
+          <h3>Weekend Luxe</h3>
+          <p>A two-night city escape that covers everything — rest, dine, and indulge.</p>
+          <ul class="pkg-includes" aria-label="Package inclusions">
+            <li>Deluxe Room (2 nights)</li>
+            <li>Breakfast both mornings</li>
+            <li>One spa credit (₹2,000)</li>
+            <li>Rooftop bar welcome drink</li>
+            <li>Complimentary parking</li>
+          </ul>
+          <div class="pkg-price">₹21,000 <span>/ 2 nights</span></div>
+          <a href="contact.html" class="btn btn-gold" style="width:100%; text-align:center;">Book Package</a>
+        </div>
+        <div class="package-card reveal" data-delay="200">
+          <div class="pkg-icon" aria-hidden="true">💼</div>
+          <h3>Business Elite</h3>
+          <p>Designed for the modern executive who demands seamless comfort and productivity.</p>
+          <ul class="pkg-includes" aria-label="Package inclusions">
+            <li>Junior Suite (up to 5 nights)</li>
+            <li>Daily breakfast &amp; evening cocktails</li>
+            <li>Business centre access</li>
+            <li>Airport pickup &amp; drop</li>
+            <li>Express laundry service</li>
+          </ul>
+          <div class="pkg-price">₹17,500 <span>/ night</span></div>
+          <a href="contact.html" class="btn btn-gold" style="width:100%; text-align:center;">Book Package</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Veloria<span>.</span></a>
+          <p>A sanctuary of refined luxury in the heart of the city. Dedicated to creating unforgettable experiences since 1998.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact &amp; Booking</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Rooms</h4>
+          <ul>
+            <li><a href="rooms.html">Deluxe Room</a></li>
+            <li><a href="rooms.html">Junior Suite</a></li>
+            <li><a href="rooms.html">Veloria Suite</a></li>
+            <li><a href="rooms.html">Presidential Suite</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <p>12, Grand Palace Road<br />Bandra West, Mumbai<br />Maharashtra 400050</p>
+          <p style="margin-top:10px;">📞 +91 22 6789 0000<br />✉️ hello@veloriagrand.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Veloria Grand Hotel. All rights reserved.</p>
+        <p>Made for <a href="#">MANTRA 2026</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+# Veloria Grand Hotel
+
+> A luxury independent hotel in Bandra West, Mumbai, offering 147 rooms and suites, fine dining, a rooftop pool, spa, and event spaces. Founded in 1998.
+
+## Pages
+
+- [Home](https://veloria-hotel.netlify.app/): Overview, room highlights, amenities, and booking bar
+- [About](https://veloria-hotel.netlify.app/about.html): Hotel history, values, leadership team, awards, FAQ
+- [Rooms & Packages](https://veloria-hotel.netlify.app/rooms.html): Deluxe Rooms, Junior Suites, Veloria Suites, Presidential Suites, and curated packages (Honeymoon, Weekend Luxe, Business Elite)
+- [Gallery](https://veloria-hotel.netlify.app/gallery.html): Photos of rooms, facilities, dining, and events
+- [Contact / Booking](https://veloria-hotel.netlify.app/contact.html): Booking form, address, phone, and email
+
+## Key Facts
+
+- Address: 12, Grand Palace Road, Bandra West, Mumbai, Maharashtra 400050, India
+- Phone: +91 22 6789 0000
+- Email: hello@veloriagrand.com
+- Check-in: 2:00 PM / Check-out: 12:00 noon
+- Reception: open 24 hours

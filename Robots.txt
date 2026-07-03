@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://veloria-hotel.netlify.app/sitemap.xml

@@ -3,7 +3,7 @@
 A fully responsive, SEO-optimised static hotel website built with pure HTML5, CSS3, and JavaScript.
 
 ## Live Demo
-🌐 [View on Netlify](#) *(replace with your Netlify URL after deployment)*
+🌐 [View on Netlify](https://veloria-hotel.netlify.app/)
 
 ## Pages
 | Page | File | Purpose |
@@ -57,7 +57,7 @@ hotel-website/
 6. Your live URL will appear in seconds ✅
 
 ---
-**Student:** [Your Name]  
-**Registration No:** [Your Roll Number]  
+**Student:** Muttina Sai Santhosh  
+**Registration No (PRN):** 250200526  
 **Topic:** Hotel Website  
 **Course:** MANTRA 2026 Summer School
